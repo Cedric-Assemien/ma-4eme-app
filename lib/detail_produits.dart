@@ -1,4 +1,5 @@
-import 'package:flutter/cupertino.dart';
+// ignore_for_file: use_full_hex_values_for_flutter_colors
+
 import 'package:flutter/material.dart';
 import 'package:flutter_boxicons/flutter_boxicons.dart';
 
@@ -9,7 +10,7 @@ class DetailProduit extends StatefulWidget {
   State<DetailProduit> createState() => _DetailProduitState();
 }
 
-const couleur = const Color(0xffff1e100f);
+const couleur = Color(0xffff1e100f);
 
 class _DetailProduitState extends State<DetailProduit> {
   @override
@@ -74,33 +75,33 @@ class _DetailProduitState extends State<DetailProduit> {
         ),
         Row(children: [
           Container(
-            margin: EdgeInsets.all(15),
+            margin: const EdgeInsets.all(15),
             child:
-                Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-              const Text(
+                const Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+              Text(
                 "Indonesian Beans",
                 style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.w500,
                     fontSize: 22),
               ),
-              const Text(
+              Text(
                 "Coffee Beans",
                 style: TextStyle(
                     color: Colors.white54, fontWeight: FontWeight.w400),
               ),
             ]),
           ),
-          SizedBox(
+          const SizedBox(
             width: 110,
           ),
           Container(
             height: 30,
             width: 60,
             decoration: BoxDecoration(
-                color: Color(0xffff332a23),
+                color: const Color(0xffff332a23),
                 borderRadius: BorderRadius.circular(15)),
-            child: Row(
+            child: const Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Icon(
@@ -116,13 +117,13 @@ class _DetailProduitState extends State<DetailProduit> {
           ),
         ]),
         Container(
-          margin: EdgeInsets.symmetric(horizontal: 15),
+          margin: const EdgeInsets.symmetric(horizontal: 15),
           child: Row(
             children: [
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
+                  const Text(
                     "Volume Pack",
                     style: TextStyle(
                         color: Colors.white,
@@ -134,13 +135,13 @@ class _DetailProduitState extends State<DetailProduit> {
                     child: Row(
                       children: [
                         Container(
-                          margin: EdgeInsets.fromLTRB(0, 10, 10, 10),
+                          margin: const EdgeInsets.fromLTRB(0, 10, 10, 10),
                           height: 50,
                           width: 85,
                           decoration: BoxDecoration(
                               border: Border.all(color: Colors.white),
                               borderRadius: BorderRadius.circular(15)),
-                          child: Center(
+                          child: const Center(
                             child: Text(
                               "250g",
                               style: TextStyle(
@@ -151,13 +152,13 @@ class _DetailProduitState extends State<DetailProduit> {
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.fromLTRB(0, 10, 10, 10),
+                          margin: const EdgeInsets.fromLTRB(0, 10, 10, 10),
                           height: 50,
                           width: 85,
                           decoration: BoxDecoration(
-                              color: Color(0xffffe4cd97),
+                              color: const Color(0xffffe4cd97),
                               borderRadius: BorderRadius.circular(15)),
-                          child: Center(
+                          child: const Center(
                             child: Text(
                               "500g",
                               style: TextStyle(
@@ -168,13 +169,13 @@ class _DetailProduitState extends State<DetailProduit> {
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.fromLTRB(0, 10, 10, 10),
+                          margin: const EdgeInsets.fromLTRB(0, 10, 10, 10),
                           height: 50,
                           width: 85,
                           decoration: BoxDecoration(
                               border: Border.all(color: Colors.white),
                               borderRadius: BorderRadius.circular(15)),
-                          child: Center(
+                          child: const Center(
                             child: Text(
                               "750g",
                               style: TextStyle(
@@ -185,13 +186,13 @@ class _DetailProduitState extends State<DetailProduit> {
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.fromLTRB(0, 10, 10, 10),
+                          margin: const EdgeInsets.fromLTRB(0, 10, 10, 10),
                           height: 50,
                           width: 85,
                           decoration: BoxDecoration(
                               border: Border.all(color: Colors.white),
                               borderRadius: BorderRadius.circular(15)),
-                          child: Center(
+                          child: const Center(
                             child: Text(
                               "1 kg",
                               style: TextStyle(
@@ -210,9 +211,9 @@ class _DetailProduitState extends State<DetailProduit> {
           ),
         ),
         Container(
-          margin: EdgeInsets.all(15),
+          margin: const EdgeInsets.all(15),
           child:
-              Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+              const Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
             Text(
               "About",
               style: TextStyle(
@@ -221,7 +222,7 @@ class _DetailProduitState extends State<DetailProduit> {
                   fontSize: 17),
             ),
             SizedBox(height: 10),
-            Container(
+            SizedBox(
               height: 100,
               width: 360,
               child: Text(
@@ -233,17 +234,17 @@ class _DetailProduitState extends State<DetailProduit> {
             ),
           ]),
         ),
-        SizedBox(
+        const SizedBox(
           height: 10,
         ),
-        Container(
+        SizedBox(
           height: 80,
           width: MediaQuery.of(context).size.width * 0.9,
           child: Center(
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Column(
+                const Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -265,8 +266,8 @@ class _DetailProduitState extends State<DetailProduit> {
                     width: 165,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(25),
-                        color: Color(0xffffe4cd97)),
-                    child: Center(
+                        color: const Color(0xffffe4cd97)),
+                    child: const Center(
                         child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [

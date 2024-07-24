@@ -1,4 +1,4 @@
-// ignore_for_file: camel_case_types
+// ignore_for_file: camel_case_types, use_full_hex_values_for_flutter_colors
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -11,7 +11,7 @@ class page_acceuil extends StatefulWidget {
   State<page_acceuil> createState() => _page_acceuilState();
 }
 
-const couleur = const Color(0xffff1e100f);
+const couleur = Color(0xffff1e100f);
 
 class _page_acceuilState extends State<page_acceuil> {
   @override
@@ -164,7 +164,7 @@ class _page_acceuilState extends State<page_acceuil> {
                         color: const Color(0xffffe4cd97),
                         borderRadius: BorderRadius.circular(10)),
                     child: const Center(
-                      child: const Text(
+                      child: Text(
                         "Popular",
                         style: TextStyle(color: couleur, fontSize: 16),
                       ),
